@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+}
+
+/* Top Navigation Bar */
+.topbar {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.topbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topbar .logo span {
+  color: #0071c2;
+}
+
+.topbar .menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topbar .menu a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Header Section */
+.header {
+  background: #003580;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.trip-type {
+  margin-top: 15px;
+}
+
+.trip-type label {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+/* Form Section */
+.form-box {
+  background: white;
+  padding: 20px;
+  max-width: 960px;
+  margin: -20px auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  border: 2px solid #ffc107;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-box input,
+.form-box select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-box button {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
