@@ -1,0 +1,308 @@
+        body {
+            font-family: 'BlinkMacSystemFont', 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .header {
+            background-color: #003580;
+            color: white;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .user-actions a {
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .user-actions a.highlight {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px 10px;
+        }
+        
+        .main-nav {
+            background-color: #003580;
+            padding: 10px 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 20px;
+        }
+        
+        .nav-item {
+            white-space: nowrap;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .nav-link.active {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .hero-section {
+            background-color: #003580;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .search-box {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            margin-top: -20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .offer-box1, .offer-box2 {
+            border-radius: 10px;
+            background-color: #febb02;
+            color: #000;
+        }
+        
+        .offer-box2 {
+            background-color: #003580;
+            color: white;
+        }
+        
+        .trend {
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .trend .title {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        /* Responsive  */
+        @media (max-width: 992px) {
+            .user-actions {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .offer-box1, .offer-box2 {
+                flex-direction: column !important;
+            }
+            
+            .offer-box1 img, .offer-box2 img {
+                width: 100% !important;
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-right {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            
+            .c-indicator,
+            .help-icon,
+            .language-selector {
+                margin-bottom: 10px;
+            }
+            
+            .search-box .row > div {
+                margin-bottom: 10px;
+            }
+            
+            .trend {
+                height: 180px !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo {
+                font-size: 1.2rem;
+            }
+            
+            .nav-link span {
+                display: none;
+            }
+            
+            .nav-link i {
+                font-size: 1.2rem;
+            }
+            
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-section p {
+                font-size: 1rem;
+            }
+            
+            .checkbox {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .trend {
+                height: 150px !important;
+            }
+            
+            .trend .title {
+                font-size: 1.2rem;
+                bottom: 10px;
+                left: 10px;
+            }
+        }
+         /* Custom styles */
+        body {
+            font-family: 'BlinkMacSystemFont', 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .header {
+            background-color: #003580;
+            color: white;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .user-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .user-actions a {
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .user-actions a.highlight {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px 10px;
+        }
+        
+        .main-nav {
+            background-color: #003580;
+            padding: 10px 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 20px;
+        }
+         .nav-item {
+            white-space: nowrap;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .nav-link.active {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .hero-section {
+            background-color: #003580;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+         /* Responsive  for top nav */
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                display: flex !important;
+                flex-basis: auto;
+            }
+            
+            .navbar-toggler {
+                display: none;
+            }
+            
+            .nav-right {
+                flex-wrap: nowrap;
+            }
+        }
+        
+        @media (max-width: 1199.98px) {
+            .user-actions a {
+                font-size: 0.9rem;
+                padding: 3px 6px;
+            }
+            
+            .language-selector select {
+                font-size: 0.9rem;
+            }
+        }
+         @media (max-width: 991.98px) {
+            .user-actions {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }

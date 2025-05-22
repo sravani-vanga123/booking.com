@@ -1,5 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   
+         <header class="header">
+        <!-- Top Navigation Bar -->
+        <div class="container py-2">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <a href="#" class="logo">Booking.com</a>
+                
+                <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="nav-right ms-auto">
+                        <div class="c-indicator d-flex align-items-center me-2">
+                            <div class="flag"></div>
+                            <span class="c-code ms-1">IND</span>
+                        </div>
+
+                        <div class="help-icon me-2">
+                            <i class="far fa-question-circle"></i>
+                        </div>
+
+                        <div class="language-selector me-3">
+                            <select class="form-select form-select-sm">
+                                <option>English (IN)</option>
+                                <option>हिंदी</option>
+                            </select>
+                        </div>
+ <div class="user-actions">
+                            <a href="#" class="user-action me-2">List your property</a>
+                            <a href="#" class="user-action me-2">Register</a>
+                            <a href="#" class="user-action highlight">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link"><i class="fas fa-bed nav-icon"></i> <span>Stays</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-plane nav-icon"></i> <span>Flights</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-car nav-icon"></i> <span>Car Rentals</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-map-marked-alt nav-icon"></i> <span>Attractions</span></a> </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-taxi nav-icon"></i> <span>Airport taxis</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="mb-3">Find your next stay</h1>
+                <p class="lead">Search deals on hotels, homes, and much more...</p>
+            </div>
+        </section>
+
+        <section class="search-box container">
+            <div class="row g-2">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <input type="text" class="form-control" placeholder="Where are you going?">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <input type="date" class="form-control" placeholder="Check-in">
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <input type="date" class="form-control" placeholder="Check-out">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <select class="form-select">
+                        <option>1 adult · 0 children · 1 room</option>
+                        <option>2 adults · 0 children · 1 room</option>
+                        <option>2 adults · 2 children · 1 room</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <button class="btn btn-primary w-100">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkbox container mt-3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="checkbox1">
+                <label class="form-check-label" for="checkbox1">I'm looking for flights</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="checkbox2">
+                <label class="form-check-label" for="checkbox2">I'm looking for an entire home or apartment</label>
+            </div>
+        </section>
+
+        <section class="offers container my-5">
+            <h2 class="mb-2">Offers</h2>
+            <p class="text-muted mb-4">Promotions, deals and special offers for you</p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="offer-box1 d-flex p-3 h-100">
+                        <img src="image 1.jpg" alt="offer1" class="img-fluid me-3" style="width:150px; height:auto; border-radius:10px;">
+                        <div>
+                            <h3>Quick escape, quality time</h3>
+                            <p>Save up to 20% with a Getaway Deal</p>
+                            <button class="btn btn-dark mt-2">Save on stays</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="offer-box2 d-flex p-3 h-100">
+                        <img src="image 2.jpg" alt="offer 2" class="img-fluid me-3" style="width:150px; height:auto; border-radius:10px;">
+                        <div>
+                            <h6>New members-only rewards for you</h6>
+                            <h3>Genius flight price alerts</h3>
+                            <p>Save on flights with price alerts in your pocket.</p>
+                            <button class="btn btn-light mt-2">Get the app</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h1 class="mb-2">Trending destinations</h1>
+            <p class="text-muted mb-4">Most popular choices for travelers from India</p>
+            
+            <div class="row g-3 mb-3">
+                <div class="col-md-6 col-12">
+                    <div class="trend" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('desti 1.jpg'); height:250px;">
+                        <div class="title">New Delhi <span class="flag"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="trend" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('desti 2.jpg'); height:250px;">
+                        <div class="title">Bangalore <span class="flag"></span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-3">
+                <div class="col-md-4 col-12">
+                    <div class="trend" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('desti 3.jpg'); height:250px;">
+                        <div class="title">Mumbai <span class="flag"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="trend" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('desti 4.webp'); height:250px;">
+                        <div class="title">Chennai <span class="flag"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="trend" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('desti 5.webp'); height:250px;">
+                        <div class="title">Varanasi <span class="flag"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+=======
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
